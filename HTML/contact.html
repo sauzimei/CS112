@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <head>  <title>The Boys Cat Grooming Co.</title>
+    <script type="module" src="JS/map.js"></script>
+    <script type="text/javascript" src="JS/contact.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <h1>The Boys Cat Grooming Co.</h1>
+    <p>We don't just clean and care for your pet; we holistify their experience by considering how every product, process, and interaction impacts their long-term wellness.</p>
+  </div>
+  
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="login.html">Login</a>
+  </div>
+
+  <div class="row">
+    <div class="main">
+      
+        <h2>Location</h2>
+        <div class="box">
+          <div id="map">
+        </div>
+        <!-- prettier-ignore -->
+        <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+            ({key: "AIzaSyDLClnz2HamM3iFsLZTlNtbBOtHduVZZAA", v: "weekly"});</script>
+          <h3>Where to Find Us</h3>
+          <p>We are located at 1301 Avenida Cesar Chavez, Monterey Park, CA 91754.</p>
+        </div>
+
+  <h2>Contact Form</h2>
+
+  <div class="box">
+
+<div class="container"> 
+  <form id="contact-form">
+    <div class="col-md-6 form-ground">
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Your Name"
+        name="name"
+        id="name"
+        required
+      />
+    </div>
+    <div class="col-md-6 form-ground mt-3 mt-md-0">
+      <input
+        class="form-control"
+        type="text"
+        name="email"
+        id="email"
+        placeholder="Your email"
+        required
+      />
+    </div>
+
+ 
+    <div class="form-group mt-3">
+      <textarea
+        class="form-control"
+        placeholder="Message"
+        name="message"
+        rows="5"
+        id="message"
+        required
+      ></textarea>
+    </div>
+    <div class="text-center my-2">
+      <button class="submit btn btn-success">Send Message</button>
+    </div>
+</form>
+<!-- External Script -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript" src="JS/contact.js"></script>
+
+</div>
+</div>
+</div>
+</div>
+
+  <br>
+  
+  <div class="footer">
+    <h2>Follow us on: <img src="images/Social Media/facebook.png" class="social"> 
+      <img src="images/Social Media/instagram.png" class="social"> 
+      <img src="images/Social Media/tiktok.png" class="social"> 
+      <img src="images/Social Media/twitter.png" class="social"> 
+      <img src="images/Social Media/youtube.png" class="social"> </h2>
+  </div>
+
+  <script>
+    const navbar = document.getElementById("navbar");
+    const sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.scrollY >= sticky) {
+      navbar.classList.add("sticky")
+      } else {
+      navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+</body>
+
+</html>
